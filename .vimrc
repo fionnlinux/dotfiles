@@ -26,6 +26,7 @@ set nowrap          " Don't wrap long lines
 set noswapfile      " Disable swap files
 set nobackup        " Disable automatic backup files
 set undofile        " Save undo history between sessions
+set undodir=~/.vim/undodir  " Store undo files in dedicated directory
 
 " --- Appearance ---
 syntax on           " Enable syntax highlighting
