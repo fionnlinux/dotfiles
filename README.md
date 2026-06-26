@@ -2,7 +2,7 @@
 
 Personal configuration files for my Linux environment. Version controlled and publicly mirrored on GitHub and Codeberg.
 
-The goal is a stateless, reproducible environment — any machine running Fedora or AlmaLinux can be brought to my exact configuration from a single clone. Documents how I work, how my tools are configured, and evolves alongside my Linux studies.
+The goal is a portable, version-controlled setup — any machine running Fedora or AlmaLinux can be brought to my configuration from a single clone and a handful of symlinks. Documents how I work, how my tools are configured, and evolves alongside my Linux studies.
 
 ## Contents
 
@@ -10,6 +10,7 @@ The goal is a stateless, reproducible environment — any machine running Fedora
 |------|-------------|
 | `.bashrc` | Bash configuration — sources modular alias files |
 | `.vimrc` | Vim configuration — editing, indentation, search, appearance |
+| `.gitignore` | Excludes Vim undo files and other local artefacts |
 | `aliases/tibia.sh` | OpenTibia / Canary family LAN server shortcuts |
 | `aliases/bash-toolkit.sh` | Shortcuts for scripts in [bash-toolkit](https://github.com/fionnlinux/bash-toolkit) |
 
@@ -35,24 +36,12 @@ source ~/.bashrc
 
 ## Aliases
 
-### Bash Toolkit (`aliases/bash-toolkit.sh`)
+Modular alias files sourced by `.bashrc`. Each file is self-documented with a header comment listing its aliases.
 
-Shortcuts for scripts in [fionnlinux/bash-toolkit](https://github.com/fionnlinux/bash-toolkit).
-
-| Alias | Description |
-|-------|-------------|
-| `sysinfo` | Display hostname, uptime, kernel, disk usage, and free memory |
-
-### Tibia (`aliases/tibia.sh`)
-
-Shortcuts for managing a local [OpenTibiaBR Canary](https://github.com/opentibiabr/canary) game server.
-
-| Alias | Description |
-|-------|-------------|
-| `tibia-lan` | Start server in LAN mode, auto-detect IP |
-| `tibia-stop` | Stop all server containers |
-| `tibia-logs` | Follow the game server log output |
-| `tibia-status` | Show status of all running containers |
+| File | Purpose |
+|------|---------|
+| `aliases/bash-toolkit.sh` | Shortcuts for [bash-toolkit](https://github.com/fionnlinux/bash-toolkit) scripts |
+| `aliases/tibia.sh` | OpenTibia / Canary LAN server management |
 
 ## Environment
 
