@@ -11,6 +11,7 @@ The goal is a stateless, reproducible environment — any machine running Fedora
 | `.bashrc` | Bash configuration — sources modular alias files |
 | `.vimrc` | Vim configuration — editing, indentation, search, appearance |
 | `aliases/tibia.sh` | OpenTibia / Canary family LAN server shortcuts |
+| `aliases/bash-toolkit.sh` | Shortcuts for scripts in [bash-toolkit](https://github.com/fionnlinux/bash-toolkit) |
 
 ## Usage
 
@@ -33,6 +34,14 @@ source ~/.bashrc
 > An `install.sh` automation script is planned for a future commit.
 
 ## Aliases
+
+### Bash Toolkit (`aliases/bash-toolkit.sh`)
+
+Shortcuts for scripts in [fionnlinux/bash-toolkit](https://github.com/fionnlinux/bash-toolkit).
+
+| Alias | Description |
+|-------|-------------|
+| `sysinfo` | Display hostname, uptime, kernel, disk usage, and free memory |
 
 ### Tibia (`aliases/tibia.sh`)
 
