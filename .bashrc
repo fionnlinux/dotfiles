@@ -24,7 +24,12 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-# Load modular alias files from dotfiles repo
+# Load tibia server aliases
 if [ -f ~/dotfiles/aliases/tibia.sh ]; then
     source ~/dotfiles/aliases/tibia.sh
+fi
+
+# Load bash-toolkit aliases
+if [ -f ~/dotfiles/aliases/bash-toolkit.sh ]; then
+    source ~/dotfiles/aliases/bash-toolkit.sh
 fi
