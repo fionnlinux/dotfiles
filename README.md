@@ -2,7 +2,7 @@
 
 Personal configuration files for my Linux environment. Version controlled and publicly mirrored on GitHub and Codeberg.
 
-The goal is a portable, version-controlled setup — any machine running Fedora or AlmaLinux can be brought to my configuration from a single clone and a handful of symlinks. Documents how I work, how my tools are configured, and evolves alongside my Linux studies.
+The goal is a portable, version-controlled setup — a machine running Fedora or AlmaLinux can be brought close to my configuration from a single clone and a handful of symlinks. Documents how I work, how my tools are configured, and evolves alongside my Linux studies.
 
 ## Contents
 
@@ -21,6 +21,12 @@ Clone the repo:
 git clone https://github.com/fionnlinux/dotfiles.git ~/dotfiles
 ```
 
+Back up any existing files first, since `ln -s` will not overwrite them (skip any you do not have):
+```bash
+mv ~/.bashrc ~/.bashrc.bak
+mv ~/.vimrc ~/.vimrc.bak
+```
+
 Symlink files into place manually:
 ```bash
 ln -s ~/dotfiles/.bashrc ~/.bashrc
@@ -36,17 +42,13 @@ source ~/.bashrc
 
 ## Aliases
 
-Modular alias files sourced by `.bashrc`. Each file is self-documented with a header comment listing its aliases.
-
-| File | Purpose |
-|------|---------|
-| `aliases/bash-toolkit.sh` | Shortcuts for [bash-toolkit](https://github.com/fionnlinux/bash-toolkit) scripts |
-| `aliases/tibia.sh` | OpenTibia / Canary LAN server management |
+Modular alias files sourced by `.bashrc`, listed in the Contents table above. Each file is self-documented with a header comment listing its aliases.
 
 ## Environment
 
 - **Daily driver:** Fedora KDE
 - **Server:** AlmaLinux
+- **Shell:** Bash
 - **Editor:** Vim
 
 ## Mirror
